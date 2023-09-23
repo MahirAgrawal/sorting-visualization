@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Algorithms Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div id="container">
+    <div id="upper-panel">
+      <div id="sliders">
+        <div class="slider">
+          <label for="array-length">Set Number of Bars:</label>
+          <input type="range" min="5" max="100" value="50" id="array-length">
+        </div>
+        <class class="slider">
+          <label for="speed">Set Animation Speed:</label>
+          <input type="range" min="50" max="1000" value="50" id="speed">
+        </class>
+      </div>
+      <div class="sorting algo">
+        <label for="sorting-algo">Select Algorithm:</label>
+        <select name="sorting-algo" id="sorting-algo">
+          <option value="Bubble Sort" selected>Bubble Sort</option>
+          <option value="Insertion Sort">Insertion Sort</option>
+          <option value="Merge Sort">Merge Sort</option>
+        </select>
+      </div>
+    </div>
+    <div id="content"></div>
+    <div id="lower-panel">
+      <button id="playPause" type="button">Play</button>
+    </div>
+  </div>
+</body>
+</html>
